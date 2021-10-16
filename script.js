@@ -42,16 +42,16 @@ change.addEventListener('click', () => {
 })
 
 
-const persone = {
+/* const persone = {
     name : 'Alex',
     age: 25
-};
-
+}; */
+/* 
 const serialazedPersone = JSON.stringify(persone);
 
 localStorage.setItem('Alex', serialazedPersone);
 
-console.log(JSON.parse(localStorage.getItem('Alex')));
+console.log(JSON.parse(localStorage.getItem('Alex'))); */
 
 
 //Regular Expression
@@ -71,9 +71,9 @@ const reg = /\D/g;
 
 // \d -digits, \w - words, \s - spaces
 
-const string = 'My name is R2D2';
+/* const string = 'My name is R2D2';
 
-console.log(string.match(/\D/ig));
+console.log(string.match(/\D/ig)); */
 
 
 //non \D - non digit, \W non letters
@@ -93,7 +93,26 @@ console.log(string.match(/\D/ig));
 
 //console.log(pass.replace(/./g, '*')); //. - for all elements it string
 
+/* 
+console.log('2444    j0044px'.replace(/\D/g, ''));
 
-console.log('12-34-56'.replace(/-/g, ':'));
+console.log(parseInt('2444    j0044px')); */
+
+//getters and setters
 
 
+const persone = {
+    name : 'Alex',
+    age: 32,
+
+    get userAge() {
+        return this.age;
+    },
+    set userAge(num) {
+        this.age = num;
+    }
+};
+
+console.log(persone.userAge);
+console.log(persone.userAge = 55);
+console.log(persone.userAge);
