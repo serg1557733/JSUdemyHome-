@@ -1,5 +1,7 @@
 'use strict';
 
+//loCal storage
+
 /* localStorage.setItem('name of key', 'value of key');
 
 localStorage.removeItem('name of key');
@@ -50,3 +52,48 @@ const serialazedPersone = JSON.stringify(persone);
 localStorage.setItem('Alex', serialazedPersone);
 
 console.log(JSON.parse(localStorage.getItem('Alex')));
+
+
+//Regular Expression
+
+/* new RegExp('patern', 'flags') // classik 
+
+/patern/flags //using  */
+
+
+//const ans = prompt('Enter your name');
+
+//find lovercase 'n'
+
+const reg = /\D/g;
+
+//console.log(ans.match(reg)); 
+
+// \d -digits, \w - words, \s - spaces
+
+const string = 'My name is R2D2';
+
+console.log(string.match(/\D/ig));
+
+
+//non \D - non digit, \W non letters
+
+
+
+//console.log(ans.search(reg));//return number of first "n"
+
+//flags 
+
+//i - non regystry los or Up/ g -global not first but all/ m - many strings 
+
+//console.log(ans.match(reg));;
+
+
+//const pass = prompt('password');
+
+//console.log(pass.replace(/./g, '*')); //. - for all elements it string
+
+
+console.log('12-34-56'.replace(/-/g, ':'));
+
+
